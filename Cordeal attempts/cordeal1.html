@@ -1,0 +1,149 @@
+<DOCTYPE! html>
+	<html>
+
+	<head>
+		<style>
+			h1 {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				color: #111;
+				text-align: center;
+			}
+
+			.quotes {
+				font-family: Apple Chancery, cursive;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+			}
+
+			li {
+				float: left;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover {
+				background-color: #111;	
+			}
+
+			.left-thinking {
+				float: right;
+				margin: 230px;
+			}
+
+			.right-thinking {
+				float: left;
+				margin: 200px;
+			}
+
+			.left-cloud {
+				width: 350px;
+				height: 120px;
+				background: #ECEFF1;
+				box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+				border-radius: 100px;
+				text-align: center;
+				float: left;
+				padding: 10px;
+				margin-top: 10px;
+			}
+
+			.right-cloud {
+				width: 350px;
+				height: 120px;
+				background: #ECEFF1;
+				box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+				border-radius: 100px;
+				text-align: center;
+				float: right;
+				padding: 10px;
+				margin-top: 10px;
+			}
+				#myCanvas {
+					position:absolute;
+					top:300px;
+					left:35px;
+					
+				}
+				#myCanvas2 {
+					position:absolute;
+					top:300px;
+					right:-45px;			
+				}
+		</style>
+
+
+	</head>
+
+	<body>
+		<h1 style=text-align:center>Cordeal</h1>
+
+		<p class="quotes" style="text-align:center">The <span style="color:Tomato"> Ideal</span> Earbuds for the <span
+				style="color:Tomato">Ideal</span> person</p>
+
+
+		<ul>
+			<li><a class="active" href="#Idea">Idea</a></li>
+			<li><a href="#Product">Product</a></li>
+			<li><a href="#Pros">Pros</a></li>
+			<li><a href="#Specs">Specs</a></li>
+		</ul>
+		</div>
+		<div class="left-cloud">
+			Cord
+			<br>
+			<img src="Cordeal photos\Tangled earphones.jpg" width="100px" height="100px">;
+		</div>
+		<div class="right-cloud">
+			Cordless
+			<br>
+			<img src="Cordeal photos\download__8_-removebg-preview (1).png" width="100px" height="100px">;
+		</div>
+		<div>
+			<img class="left-thinking" src="Cordeal photos\Picture1-removebg-preview (1).png" width="300px"
+				height="300px">
+		</div>
+		<div>
+			<img class="right-thinking" src="Cordeal photos\thinking right.jpg" width="300px" height="300px">
+		</div>
+		<canvas id="myCanvas" width="715" height="150">
+			Your browser does not support the HTML5 canvas tag.</canvas>
+			<canvas id="myCanvas2" width="775" height="150">
+				Your browser does not support the HTML5 canvas tag.</canvas>
+
+		<script>
+			var c = document.getElementById("myCanvas");			
+			var ctx = c.getContext("2d");
+			ctx.beginPath();
+			ctx.moveTo(320, -13);
+			ctx.quadraticCurveTo(50, 100, 1200, 200);
+			ctx.stroke();
+			var d = document.getElementById("myCanvas2");
+			var ctx = d.getContext("2d");
+			ctx.beginPath();
+			ctx.moveTo(435, -13);
+			ctx.quadraticCurveTo(50, 100,-150, 250);
+			ctx.stroke();
+		</script>
+
+		<body>
+
+		</body>
+
+	</html>
+	<!--Task: p,span,div,ol,ul,li,img,header tags -->
+	<!--Done: p,span,div
+-->
+	<!--Right now at: div border class 
+-->
